@@ -12,8 +12,8 @@ package org.dimigo.vo;
  * 2.작성일: 2017. 9. 26.
  * </pre>
  *
- * @author    : 유민
- * @version   : 1.0
+ * @author : 유민
+ * @version : 1.0
  */
 public class UserVO {
 	private String id;

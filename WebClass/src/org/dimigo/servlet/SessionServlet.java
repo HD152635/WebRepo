@@ -1,4 +1,4 @@
-package org.dimigo.servlet;
+;package org.dimigo.servlet;
 
 import java.io.IOException;
 
