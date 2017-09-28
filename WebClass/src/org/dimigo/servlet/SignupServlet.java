@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.JsonObject;
+
 /**
  * Servlet implementation class SignupServlet
  */
@@ -37,17 +39,29 @@ public class SignupServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html;charset=utf-8");
-		PrintWriter out = response.getWriter();
-		
-		request.setCharacterEncoding("utf-8");
-	    String id = request.getParameter("id");
+		String id = request.getParameter("id");
 	    String pwd = request.getParameter("pwd");
 	    String name = request.getParameter("name");
 	    String nickname = request.getParameter("nickname");
-	    System.out.printf("id : %s, pwd : %s", id, pwd);
+	    
+		response.setContentType("application/json;charset=utf-8");
+	    PrintWriter out = response.getWriter();
+
+	    JsonObject jo = new JsonObject();
+
+	    jo.addProperty("id", id);
+	    jo.addProperty("pwd", pwd);
+	    jo.addProperty("name", name);
+	    jo.addProperty("nickname", nickname);
+	    
+	    System.out.println(jo.toString());
+		/*
+		System.out.printf("id : %s, pwd : %s, ", id, pwd);
 	    System.out.printf("name : %s, nickname : %s", name, nickname);
-	    boolean result = false; //(!id.equals("") && !pwd.equals("") && !name.equals("") && !nickname.equals(""));
+	    response.setContentType("text/html;charset=utf-8");*/
+		
+		request.setCharacterEncoding("utf-8");
+//	    boolean result = name.length() < 3;
 	    if(result) {
 	    	RequestDispatcher rd = request.getRequestDispatcher("jsp/login.jsp");
 	        rd.forward(request, response);
