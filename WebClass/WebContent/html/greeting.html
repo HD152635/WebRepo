@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script>
+
+
+console.log("greeting 함수 시작");
+function greeting(nation)(){
+	if(nation = 'k'){
+		document.getElementById("result").innerHTML = "안녕하세요";
+	}
+}
+function greeting(nation)(){
+	if(nation = 'e'){
+		document.getElementById("result").innerHTML = "헬로우";
+	}
+}
+function greeting(nation)(){
+	if(nation = 'c'){
+		document.getElementById("result").innerHTML = "니하오";
+	}
+}
+
+console.log("greeting 끝");
+console.log("document.getElementById("result")");
+
+
+</script>
+
+</head>
+<body>
+<h1>각 나라의 인사법</h1>
+
+<input type="button" onclick="greeting('k')" value = "한국">
+<button type="button" onclick="alert('e')">미국</button>
+<button type="button" onclick="alert('c')">중국</button>
+<p id = "result"> </p>
+
+</body>
+</html>

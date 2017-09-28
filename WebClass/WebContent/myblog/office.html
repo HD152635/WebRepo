@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>office</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <script src="../js/main.js"></script>
+  <div class="forGrid">
+    <nav class="navbar navbar-default sidebar">
+      <div class="container-fluid">
+        <div class="loginForm">
+          <span id="logintxt" style="font-size:16px;">
+        Login
+      </span>
+          <form id="loginForm">
+            <input class="form-control" type="text" placeholder="ID" aria-label="ID" id="id" required>
+            <input class="form-control" type="password" placeholder="PW" aria-label="PW" id="pw" required>
+            <button id="loginbtn" class="btn" type="button" data-toggle="modal" data-target="#myModal">Sign in</button>
+            <a href="register.html">
+            <button class="btn" type="button">Register</button>
+          </a>
+          </form>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse-1">
+          <ul class="nav navbar-nav" id="side">
+            <!--<li><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>-->
+            <li><a href="main.html">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+            <li><a href="office.html">Office<span style="font-size:16px;" class="pull-right showopacity glyphicon glyphicon-briefcase
+        "></span></a></li>
+            <li><a href="vacation.html">Vacation<span style="font-size:16px;" class="pull-right showopacity glyphicon glyphicon-globe"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="bg-office" class="content" style="background-image: url('../images/google.jpg');">
+      <div class="rst-content">
+        <h1>the office that I have worked</h1>
+        <div class="bs-callout-info">
+          <a onclick="ch('google');"><h2 style="font-size: 65px;">Google</h2></a>
+        </div>
+        <div class="bs-callout-info">
+          <a onclick="ch('microsoft');"><h2 style="font-size: 65px;">MicroSoft</h2></a>
+        </div>
+        <div class="bs-callout-info">
+          <a onclick="ch('samsung');"><h2 style="font-size: 65px;">Samsung</h2></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h4 class="modal-title" id="example"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

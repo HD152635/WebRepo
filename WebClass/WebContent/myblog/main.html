@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>main</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <div class="forGrid">
+    <nav class="navbar navbar-default sidebar">
+      <div class="container-fluid">
+        <div class="loginForm">
+          <span id="logintxt" style="font-size:16px;">
+        Login
+      </span>
+          <form id="loginForm">
+            <input class="form-control" type="text" placeholder="ID" aria-label="ID" id="id" required>
+            <input class="form-control" type="password" placeholder="PW" aria-label="PW" id="pw" required>
+            <button id="loginbtn" class="btn" type="button" data-toggle="modal" data-target="#myModal">Sign in</button>
+            <a href="register.html">
+            <button class="btn" type="button">Register</button>
+          </a>
+          </form>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse-1">
+          <ul class="nav navbar-nav" id="side">
+            <!--<li><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>-->
+            <li><a href="main.html">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+            <li><a href="office.html">Office<span style="font-size:16px;" class="pull-right showopacity glyphicon glyphicon-briefcase
+        "></span></a></li>
+            <li><a href="vacation.html">Vacation<span style="font-size:16px;" class="pull-right showopacity glyphicon glyphicon-globe"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="rst-content">
+        <img src="../images/haus.png" id="home" alt="home" />
+        <h1>Let me Introduce My Home</h1>
+        <h4>My home looks so luxury and has large spaces</h4>
+        <button id="explore">Explore House</button>
+        <div class="subtitle">My house has everything that you can think</div>
+        <div class="intro-home container-fluid">
+          <div class="col-sm-4">
+            <i style="font-size:64px;" class="glyphicon glyphicon-user"></i>
+            <h5>
+              <strong>Professional Employee</strong>
+            </h5>
+            <p class="text-muted">
+              First, many professional exployee has worked in house. The house was managed to them.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <i style="font-size:64px;" class="glyphicon glyphicon-film"></i>
+            <h5>
+              <strong>Prviate theater</strong>
+            </h5>
+            <p class="text-muted">
+              Have you been hoped that you can watch the latest movie in your house with Big screen? It can be possible in my house.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <i style="font-size:64px;" class="glyphicon glyphicon-plane"></i>
+            <h5>
+              <strong>Private plane</strong>
+            </h5>
+            <p class="text-muted">
+              I can also ride a plane at anytime I want. It can fly up to the speed of sound.
+            </p>
+          </div>
+        </div>
+        <div class="subtitle">House view</div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="../images/luxuryhome2.jpg" alt="3" style="width:100%;">
+            </div>
+            <div class="item">
+              <img src="../images/luxuryhome1.jpg" alt="1" style="width:100%;">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h4 class="modal-title" id="example"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@CHARSET "utf-8";
+/*이것만 주석*/
+
+h1{background-color: yellow;
+border:2px solid;
+text-align: center;}
+
+h3{color:pink;
+text-align:right;}
+
+#text1{
+font-weight: bold;}
+
+p{text-align:center;}
+
+.text2{font-style: italic;}
+
+h1, h3{text-decoration: underline;}
