@@ -61,7 +61,7 @@ public class SignupServlet extends HttpServlet {
 	    response.setContentType("text/html;charset=utf-8");*/
 		
 		request.setCharacterEncoding("utf-8");
-//	    boolean result = name.length() < 3;
+	    boolean result = name.length() < 3;
 	    if(result) {
 	    	RequestDispatcher rd = request.getRequestDispatcher("jsp/login.jsp");
 	        rd.forward(request, response);
