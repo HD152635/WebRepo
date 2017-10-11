@@ -3,7 +3,6 @@ body, html {
   display: block;
   overflow-x: hidden;
 }
-
 .forGrid {
   position: absolute;
   width: 100%;
@@ -66,20 +65,19 @@ nav.sidebar {
   margin-left: 0px;
   float: left;
 }
-
+.largetxt {
+	color: white;
+  	font-weight: bold;
+  	padding: 20px 10px 25px 10px;
+  	display: block;
+	font-size:16px;
+}
 nav.sidebar .forAnimate {
   opacity: 1;
 }
 
 nav:hover .forAnimate {
   opacity: 1;
-}
-
-#logintxt {
-  color: white;
-  font-weight: bold;
-  padding: 20px 10px 25px 10px;
-  display: block;
 }
 
 .loginForm {

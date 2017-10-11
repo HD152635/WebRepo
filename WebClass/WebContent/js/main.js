@@ -17,7 +17,7 @@ $.post("http://httpbin.org/post", {
   });
 
 });
-$('#myModal2').on('show.bs.modal', function(event) {
+/*$('#myModal2').on('show.bs.modal', function(event) {
 var button = $(event.relatedTarget) // Button that triggered the modal
 console.log("하이");
 var id = $('#user').val();
@@ -32,7 +32,7 @@ $.post("http://httpbin.org/post", {
     modal.find('.modal-title').text(id + '님 회원가입되었습니다.');
   });
 
-});
+});*/
 function ch(office){
   console.log("abc");
   $('#bg-office').css("background-image", "url('../images/"+office+".jpg')");
