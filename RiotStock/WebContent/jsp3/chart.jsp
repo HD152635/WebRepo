@@ -76,7 +76,7 @@
 	  "theme": "black",
 	  "dataSets": [
 		<%
-		for (int i = 1; i <= 1; i++) {
+		for (int i = 1; i <= 139; i++) {
 			ChampionVO champion = new ChampionVO(i);
 		%>	{
 		      "title": "<%=champion.getNameEN()%>",
@@ -174,7 +174,7 @@
   <script src="${contextPath}/js/main.js"></script>
   <script>
   $(document).ready(function(){
-	  
+	  /* 시작될때 채팅목록 탐색 (20) */
 	  $.post("${contextPath}/searchChat", {
 			"date": "2015-08-19 12:31:22",
 			"limit": 20
@@ -201,6 +201,7 @@
      }
   }
   function SendMessage(){
+	  /* 메세지보내기 */
 	  var text = $("#input_text").val();
 
 		$.post("${contextPath}/insertChat", {

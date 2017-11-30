@@ -38,6 +38,7 @@
 					selected.splice(i, 1);
 				}
 			} else {
+				/* 해당 거래 내역 초기화 */
 				$("#tab_cplt .td .t_1bit").text('-');
 				$("#tab_cplt .td .t_amount").text('-');
 				$("#tab_cplt .td .t_price").text('-');
@@ -52,6 +53,7 @@
 				selected.push(onChampion);
 				$.getJSON("${contextPath}/stocklist?champion=" + onChampion
 						+ "&kind=completed&limit=10", function(data) {
+					/* 해당 챔피언 거래내역 체크*/
 					$.each(data, function(index, item) {
 						$("#tab_cplt .td .t_1bit")[index].innerHTML = (Math.round(item.price).toString());
 						$("#tab_cplt .td .t_amount")[index].innerHTML = (Math.round(item.share).toString());
@@ -88,6 +90,7 @@
 					</ul>
 					<div id="tab_all" class="champions_container col s12">
 						<%
+						/* 모든 챔피언에 대해서 탐색 */
 							for (int i = 1; i <= 139; i++) {
 								ChampionVO champion = new ChampionVO(i);
 						%>
