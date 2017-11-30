@@ -1,0 +1,809 @@
+body {
+  background: #EAEAEA;
+}
+
+body p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.side-nav {
+  width: 40px;
+  background-color: #161F1F;
+}
+
+ul.side-nav>li>a.icon-container {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#logo {
+  color: #8b2f41;
+}
+
+.side-nav li a:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+header>ul.side-nav>li>a>i.material-icons {
+  margin: 0 5px;
+}
+
+.side-nav li>a.disabled:hover {
+  cursor: default;
+  background-color: inherit;
+}
+
+@media only screen and (max-width: 992px) {
+  .side-nav.fixed {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+.navbar-fixed {
+  margin-left: 40px;
+}
+
+.navbar-color .row {
+  margin-bottom: 0;
+}
+
+.navbar-color, .navbar-fixed {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+
+.nav-wrapper .material-icons {
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.navbar-fixed .nav-wrapper .focused {
+  width: calc(100% - 200px);
+}
+
+.nav-wrapper form {
+  float: left;
+  display: inline-block;
+  width: calc(100% - 400px);
+}
+
+.navbar-color {
+  background: #ffffff;
+}
+
+input#search {
+  margin-bottom: 0;
+}
+
+.input-field .label-icon {
+  top: -10px;
+}
+
+.nav-wrapper ul.right {
+  position: fixed;
+  right: 5px;
+}
+
+nav ul a:hover {
+  background-color: inherit;
+}
+
+.nav-wrapper .right li a {
+  padding: 0 20px;
+  color: #757575 !important;
+}
+
+.bar {
+  margin-top: 14px;
+  height: 36px;
+  border-left: 1px solid #757575;
+}
+
+.container {
+}
+
+.box-container .champions_container {
+  padding-top: 10px;
+  background: #F9F9FA;
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.champion_container {
+  text-align: right;
+  display: inline-block;
+  margin: 2px 0;
+  float: left;
+  width: 18%;
+  margin: 0 1%;
+}
+
+.champion_container img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.champion_container .active {
+  border: 2px solid red;
+}
+
+.champion_container span {
+  position: relative;
+  left: -5px;
+  bottom: 18px;
+  background: #b1b1b1;
+  font-size: 9px;
+}
+
+#chart_multiple {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #000;
+  padding-right: 20px;
+}
+
+.box-container .col {
+  padding: 20px 10px;
+}
+
+.right .tab {
+  float: right !important;
+}
+
+.tabs h2 {
+  margin: 0;
+  float: left;
+  font-weight: bold;
+  color: #222;
+  padding: 18px 0 0 18px;
+  font-size: 14px;
+}
+
+.tabs .tab a {
+  padding: 0 12px;
+}
+
+.c_table {
+  background: #F9F9FA;
+  padding: 68px 20px 40px 20px;
+  height: 448px;
+}
+
+.thead div {
+  text-align: center;
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  display: table-cell;
+}
+
+.c_table .t_sharp {
+  width: 8%;
+}
+
+.c_table .t_1bit {
+  width: 30%;
+}
+
+.c_table .t_price {
+  width: 34%;
+}
+
+.c_table .t_amount {
+  width: 28%;
+}
+
+.tbody {
+  background: #ffffff;
+  border: solid 1px #e9eff4;
+}
+
+.td {
+  text-align: center;
+  float: left;
+  font-size: 13px;
+}
+
+.c_table div {
+  width: 100%;
+  display: inline-table;
+}
+
+.tbody .td {
+  border-top: solid 1px #e9eff4;
+}
+
+.tbody .td:first-child {
+  border-top: none;
+}
+
+.tbody .td div {
+  padding: 7px 0;
+}
+
+.tbody .td div {
+  border-left: solid 1px #e9eff4;
+}
+
+.container .list_header {
+  margin-top: 50px;
+}
+
+.main-container {
+  margin: 68px 40px 0 100px;
+}
+
+.cards-container {
+  text-align: center;
+  width: 100%;
+}
+
+.cards-container .card {
+  width: 250px;
+  height: 325px;
+  margin: 10px 1%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.card-action {
+  display: flex;
+}
+
+.main-container .cards-container .card .card-action a {
+  transition: opacity .3s !important;
+  opacity: 0.5;
+  margin-right: 0 !important;
+  width: 50%;
+  text-align: center;
+}
+
+.main-container .cards-container .card .card-action a:hover {
+  opacity: 1;
+}
+
+.card-content {
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-content h4, h5 {
+  margin: 0;
+}
+
+.card-content h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.card-content h5 {
+  font-size: 14px;
+  color: grey;
+}
+
+.card_champion_image {
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.chart-container {
+  overflow: hidden;
+  display: flex;
+}
+
+.ch-chart {
+  padding-top: 20px;
+  width: 60%;
+  height: 100px;
+}
+
+.price_up {
+  color: #1258C2;
+  padding: 30px 0 0 30px;
+  font-size: 18px;
+}
+
+.price_down {
+  color: #E60909;
+  padding: 30px 0 0 30px;
+  font-size: 18px;
+}
+
+body>.row {
+  margin: 0;
+  margin-left: 40px;
+}
+
+.champion_stat {
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+.champion_intro_header {
+  background: #292E38;
+  margin-top: 0;
+  padding: 0 80px;
+}
+
+.champion_intro {
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.intro_champion_img {
+  height: calc(100% - 10px);
+  margin-right: 20px;
+  float: left;
+  border: 5px solid white;
+}
+
+.champion_name {
+  color: white;
+  font-size: 24px;
+  margin: 10px auto;
+}
+
+.champion_intro_ranking {
+  color: #adadad;
+  font-size: 15px;
+}
+
+.champion_intro_ratio {
+  margin: 13px auto;
+  font-size: 17px;
+  color: #e4e4e4;
+}
+
+.champion_intro_ratio .champion_intro_price {
+  color: red;
+}
+
+.variation {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.main-content-container {
+  margin: 20px 25px;
+  background: white;
+}
+
+.main-content {
+  overflow: hidden;
+  padding: 8px 32px 32px 32px;
+}
+
+.main-content h1 {
+  font-size: 28px;
+}
+
+.main-content .champion_name {
+  color: #c728dd;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+table.table_trading {
+  font-size: 13px;
+}
+
+th.tb_buy {
+  color: #1258C2;
+}
+
+.tb_buy td {
+  background: #D6EAF7;
+  color: #006294;
+}
+
+th.tb_sell {
+  color: #E60909;
+}
+
+.tb_sell td {
+  background: #FFF2F6;
+  color: #E62629;
+}
+
+tbody tr .empty_cell {
+  background: rgba(0, 0, 0, 0);
+}
+
+.order_tab .indicator {
+  display: none;
+}
+
+.order_tab .tabs .tab a {
+  background: #E0E0E0;
+  color: inherit;
+}
+
+.order_tab .tabs .tab a:hover {
+  background: #d4cece;
+  color: inherit;
+}
+
+.order_tab .tabs .tab a.active {
+  background: #ffffff;
+}
+
+.order_tab .tabs .tb_buy {
+  color: #006294;
+}
+
+.order_tab .tabs .tb_sell {
+  color: #E62629;
+}
+
+.order_tab .tabs .tb_buy a.active {
+  border-top: 2px solid #0c3e8a;
+  color: #0c3e8a;
+  font-weight: bold;
+}
+
+.order_tab .tabs .tb_sell a.active {
+  border-top: 2px solid #E60909;
+  font-weight: bold;
+  color: #E60909;
+}
+
+.row .order_tab {
+  padding: 0;
+  border: 1px solid #c2c4bc;
+}
+
+.main-content .order_tab form {
+  padding-top: 20px;
+}
+
+.order_tab form .btn {
+  margin: 10px 5%;
+  width: 90%;
+}
+
+#chartdiv select {
+  width: 180px;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0;
+  height: 18.8px;
+  display: inline-block;
+  color: black;
+}
+
+.chart_header {
+  background: black;
+  border-bottom: 2px solid #333333;
+  height: 44px;
+  line-height: 44px;
+}
+
+nav.chart_header .brand-logo {
+  margin: auto 10px;
+  height: inherit;
+}
+
+.chat_win {
+  border-left: 2px solid #333333;
+  z-index: 99;
+  position: fixed;
+  height: 100%;
+  width: 320px;
+  background: #535050;
+  top: 0;
+  right: 0;
+  margin-top: 44px;
+  transition: opacity .5s ease;
+  opacity: 0.5;
+}
+
+.chat_win:hover {
+  opacity: .65;
+}
+
+.chat_win.active {
+  opacity: 1;
+}
+
+.chat_list_wrapper {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: calc(100% - 150px);
+}
+
+.chat_list {
+  margin: 0;
+}
+
+.chat_item {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.chat_item .time {
+  font-weight: lighter;
+  font-size: 11px;
+  color: #9f9f9f;
+  float: right;
+}
+
+.chat_item .message_wrapper .nickname {
+  color: #1c7cd6;
+}
+
+.chat_item .message_wrapper .message {
+  margin-left: 5px;
+}
+
+.chat_item:nth-child(2n) {
+  background: #000000;
+}
+
+.chat_item:nth-child(2n+1) {
+  background: #2e2e2e;
+}
+
+.chat_win .chat_header {
+  background: black;
+  border-bottom: 2px solid #333333;
+  height: 42px;
+}
+
+.chat_win .chat_input {
+  background: #464646;
+  padding: 0;
+  height: 64px;
+}
+
+.chat_input .input-field {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.chat_input .input-field .materialize-textarea {
+  font-size: 12px;
+  padding: 10px 10px;
+  height: 100%;
+  margin: 0;
+}
+
+.user_intro_wrapper {
+  overflow: hidden;
+  margin: 30px 20px;
+}
+
+.user_icon {
+  float: left;
+  display: block;
+  margin-right: 20px;
+}
+
+.user_name {
+  font-size: 40px;
+}
+
+.user_tier {
+  font-size: 18px;
+  font-weight: light;
+}
+
+.game_now {
+  float: right;
+}
+
+.blue_team h5 {
+  background: #d5d5d5;
+  border: 1px solid #aaaaaa;
+  border-left: 5px solid #1F8ECD;
+  font-size: 14px;
+  color: #1F8ECD;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.red_team h5 {
+  background: #d5d5d5;
+  border: 1px solid #aaaaaa;
+  border-left: 5px solid #EE5A52;
+  font-size: 14px;
+  color: #EE5A52;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.summon_info {
+  background: #F2F2F2;
+}
+
+.summon_info ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 5px 20px !important;
+}
+
+.summon_info li {
+  text-align: center;
+  float: left;
+}
+
+.summon_info .summon_name {
+  width: 45%;
+}
+
+.summon_info .summon_tier {
+  width: 40%;
+}
+
+.summon_info .summon_rate {
+  width: 15%;
+}
+
+.betting_form {
+  margin: calc((100% - 350px)/2) 5%;
+}
+
+.betting_form div {
+  margin-bottom: 10%;
+}
+
+nav a.button-collapse {
+  margin: 0;
+}
+
+@media only screen and (min-width: 993px) {
+  nav a.button-collapse {
+    display: inherit;
+  }
+}
+
+ul[id*="slide-out"] {
+  margin-left: 40px;
+  width: 40%;
+  background: #ffffff;
+}
+
+.input-field {
+  line-height: 1.5;
+}
+
+.user-view {
+  background: #1D2129;
+  height: 100px;
+}
+
+.user-img {
+  margin: auto;
+  display: block;
+  width: 110px;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.side-nav li .material-icons {
+  float: left;
+}
+
+.money_had {
+  padding: 50px 0 0 30px;
+}
+
+.money_had div h5 {
+  font-size: 20px;
+  color: #bdbdbd;
+  margin: 10px 0;
+}
+
+.side-nav .money_had div {
+  line-height: 24px;
+}
+
+.money_had .money_wrapper {
+  margin-bottom: 10px;
+}
+
+.money_all .money {
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.money_list {
+  margin-bottom: 10px;
+}
+
+.money_wrapper {
+  margin: 30px 0;
+}
+
+.login_form {
+  width: 70%;
+  margin: 30% auto;
+  margin-bottom: 0;
+}
+
+.user-info {
+  margin-top: 55px;
+}
+
+.user-info h3 {
+  text-align: center;
+  font-size: 20px;
+}
+.user-info .btn{
+  box-shadow: none;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  color: #343434 !important;
+}
+.user-info .btn:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+.register_form{
+  width: 60%;
+  margin: 100px 25% 0 15%;
+}
+.register_form div{
+  margin-bottom: 40px;
+}
+#chart_multiple {
+  width: 100%;
+  height: 500px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.amChartsPeriodSelector {
+  float: right;
+}
+
+.amChartsPeriodSelector .amChartsButton {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  outline: none;
+  background: #fff;
+  color: #000;
+}
+
+.amChartsPeriodSelector .amChartsButton:hover {
+  background-color: #eeeeee;
+}
+
+.amChartsPeriodSelector .amChartsButtonSelected {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #0088CC;
+  color: #000000;
+  padding-bottom: 3px;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 1px;
+  outline: none;
+}
+
+.amChartsDataSetSelector {
+  padding: 5px 0 0 15px;
+}
+
+
+#chartdiv {
+  min-width: 900px;
+  width: calc(100% - 41px);
+  height: calc(100% - 61px);
+}

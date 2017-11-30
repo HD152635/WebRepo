@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<action-mapper>
+
+	<action-name name="openlogin">
+        <result name="success">jsp/login.jsp</result>
+        <result name="error">jsp/home.jsp</result>
+    </action-name>
+    
+	<action-name name="login" class="org.dimigo.action.LoginAction">
+        <result name="success">jsp/home.jsp</result>
+        <result name="error">jsp/login.jsp</result>
+    </action-name>    
+    
+   	<action-name name="logout" class="org.dimigo.action.LogoutAction">
+        <result name="success">jsp/home.jsp</result>
+        <result name="error">jsp/home.jsp</result>
+    </action-name>
+    
+   	<action-name name="session" class="org.dimigo.action.SessionAction">
+        <result name="success">jsp/sessionInfo.jsp</result>
+        <result name="error">jsp/login.jsp</result>
+    </action-name>
+    
+    <action-name name="opensignup">
+        <result name="success">jsp/signup.jsp</result>
+        <result name="error">jsp/home.jsp</result>
+    </action-name>
+
+	<!-- Ajax call -->    
+    <action-name name="signup" class="org.dimigo.action.SignupAction">
+    </action-name>
+    
+</action-mapper>

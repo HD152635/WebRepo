@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import = "org.dimigo.vo.UserVO" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -38,10 +38,7 @@ function menu_out(e) {
   	<%@ include file="menu.jsp" %>
   	
     <%-- 세션에 사용자 정보가 없는 경우 --%>
-    <%
-	UserVO user = (UserVO)session.getAttribute("user");
-	if(user==null){
-	%>
+    <c:if user != null></c:if>
     	<a class="text-bold text-white" style="text-decoration: none" href="/WebClass/login">Sign in</a>
     	<span class="text-bold text-white">&nbsp; or &nbsp;</span>
     	<a class="text-bold text-white" style="text-decoration: none" href="/WebClass/signup">Sign up</a>

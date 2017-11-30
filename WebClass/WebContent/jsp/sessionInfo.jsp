@@ -8,13 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<% 
-	UserVO vo = (UserVO) session.getAttribute("user");
-%>
 
-<h1> id : <%= vo.getId() %></h1>
-<h1> nickname : <%= vo.getNickname() %></h1>
-<h1> name : <%= vo.getName() %></h1>
+<h1> id : <%= ${ user.id } %></h1>
+<h1> nickname : <%= ${ user.nickname } %></h1>
+<h1> name : <%= ${ user.name } %></h1>
 
 </body>
 </html>
